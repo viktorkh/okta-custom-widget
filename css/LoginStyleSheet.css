@@ -1,0 +1,198 @@
+input[type='text'], input[type='password'] {
+    border: none;
+    width: 250px;
+    height: 35px;
+    margin-bottom: 5px;
+    padding-left:14px;
+    color: #555550;
+}
+
+#main table{
+    clear: both;
+}
+
+#ctl00_Div1{
+    background-color: #3D8EB9;
+}
+
+a {
+    color: #EEB329;
+    text-decoration: none;
+}
+
+    a:hover {
+       color: #FEE34E; 
+    }
+
+#ctl00_imgMasterPageLogo, #logoPartner img{
+    display: none;
+}
+
+#logo, #logoPartner{
+    display: block;
+    width:300px;
+    height: 50px;
+    background-image: url('https://authentication.clicksoftware.com/adfs/App_Themes/Default/click_logo_5_16.png');
+    background-repeat: no-repeat;
+}
+
+body {
+    background: rgb(255, 255, 255) !important;
+    font-family: Calibri;
+}
+
+#header_left{
+    background-color: white !important;
+    padding:14px;
+}
+
+.imglink{
+    display: none;
+}
+
+#a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    color: rgb(170, 170, 170);
+    font-size: 90%;
+}
+
+#container {
+    margin: 0px auto;
+    width: 978px;
+    background-color: #3D8EB9;
+    color: white;
+    margin-top: 50px;
+    
+}
+
+#containerFooter {
+    margin: 0px auto;
+    width: 980px;
+    height: 5px;
+}
+
+#header {
+    width: 100%;
+    height: 92px;
+    position: relative;
+    background-color: white;
+}
+
+#header a{
+    color: #555550;
+}
+
+#headerBottom1 {
+    display: none;
+}
+
+#logo {
+    margin: 31px 0px 0px 22px;
+    float: left;
+    display: inline;
+}
+
+#utilities {
+    margin-top: 45px;
+    float: right;
+}
+
+    #utilities li {
+        padding: 0px 0px 0px 9px;
+        display: inline;
+    }
+
+    #utilities li a {
+        padding: 0px 0px 0px 9px;
+        border: 1px solid #3D8EB9;
+        padding: 10px;
+        text-decoration: none;
+        color: #3D8EB9;
+        font-size: 18px
+        -moz-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        -webkit-transition: 0.3s ease-in;
+        transition: 0.2s ease-in;
+        
+    }
+
+
+
+#utilities li a:hover{
+    background-color: #3D8EB9;
+    color:white;
+}
+
+
+#footer {
+    margin: 16px auto 10px;
+    width: 980px;
+    clear: both;
+}
+
+    #footer ul {
+        list-style: none;
+        margin: 0px;
+        float: left;
+    }
+
+        #footer ul li {
+            padding: 0px 5px 0px 0px;
+            display: inline;
+        }
+
+#interiorColumns {
+    padding: 0 20px;
+}
+.divContentClass {
+    padding: 0 0 20px 10px;
+    width: 100%;
+	
+	background-image: url('https://authentication.clicksoftware.com/adfs/App_Themes/Default/connect2016login.png');
+    
+    background-repeat:no-repeat;
+    background-position:70% 47%;
+	
+}
+#content {
+    padding: 0 0 20px 10px;
+    width: 100%;
+	
+	background-image: url('https://authentication.clicksoftware.com/adfs/App_Themes/Default/connect2016login.png');
+    
+    background-repeat:no-repeat;
+    background-position:70% 47%;
+	
+}
+
+#imgDiv{
+	
+	
+}
+
+.ClickBoxLink { 
+		position: absolute; 
+		top:300px;
+left:1000px;
+width:400px;
+height:250px;
+		background-color: transparent; 
+		 }
+
+#containerFooter{
+    display: none;    
+}
+
+input[type='submit']{
+    border: none;
+    background-color: #EEB329 !important;  
+    height: 50px !important;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+
+

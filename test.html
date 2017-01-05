@@ -1,0 +1,125 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.4.0/css/okta-sign-in.min.css" type="text/css"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="test.css">
+
+    <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.4.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.4.0/css/okta-theme.css" type="text/css" rel="stylesheet">
+    <link href="okta.css" type="text/css" rel="stylesheet">
+  <link href="/css/LoginStyleSheet.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/jquery.js?ver=2.7.2"></script>
+   
+  
+    <title>Field Service Management Software for the Future | ClickSoftware</title>
+   
+    
+    <link rel="stylesheet" id="twentysixteen-style-css" href="/css/style.css?ver=4.5.3"
+        type="text/css" media="all">  
+
+
+    <link rel="stylesheet" id="wp-social-sharing-css" href="/css/socialshare.css?ver=1.5"
+        type="text/css" media="all">
+    <script type="text/javascript" src="/js/jquery.js?ver=1.12.4"></script>
+    
+   
+   
+    
+    
+    
+    
+</head>
+
+<body style="">
+
+    <section class="banner-part-start home-page-slider relative text-center">
+        <div class="page-title">
+            <div class="heading-title">
+                <div class="main-part">
+                    <div id="okta-login-container"></div>
+                   	<script type="text/javascript">
+		var baseUrl = 'https://clicksoftware.okta.com';
+			var oktaSignIn = new OktaSignIn({
+				baseUrl: baseUrl,			
+
+				features: {
+					rememberMe: true,					
+					selfServiceUnlock: false
+				},
+
+				helpLinks: {
+					
+					forgotPassword: 'https://clicksoftware.secure.force.com/AccessRequestForm/ForgotMyPassword',				
+					custom: [
+					{ text: 'New user registration', href: 'https://clicksoftware.secure.force.com/AccessRequestForm' },
+					{ text: 'ClickSoftware support hotline', href: 'https://www.clicksoftware.com/contact-us/' }
+					]
+				},
+
+			
+				});
+		
+		oktaSignIn.renderEl(
+		  { el: '#okta-login-container' },
+		  function (res) {
+		    if (res.status === 'SUCCESS') { 
+			
+			
+				 
+				 var uri = getParameterByName('RelayState');
+				 if(uri==null){
+
+					 uri="https://wikisb.clicksoftware.com"
+				 }
+				 
+				 if(uri.indexOf('/support/')==0){
+				 
+					uri='https://fullsb-cksw.cs26.force.com'+uri;
+				 
+				 }
+					
+				//	res.session.setCookieAndRedirect('https://wikisb.clicksoftware.com');
+				res.session.setCookieAndRedirect(uri); 
+		  }
+		  }
+		);
+	
+		
+		 function getParameterByName(name, url) {
+      if (!url) url = decodeURIComponent(window.location.href);
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+	</script>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>   
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+</html>
